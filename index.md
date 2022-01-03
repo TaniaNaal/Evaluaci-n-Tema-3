@@ -1,37 +1,76 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=decive-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <title>
+        Evaluacion Tema 3 - Naal Balan
+    </title>
+    <body>
+<h1>Registro de los participantes</h1>
+<table>
+    <tr>
+        <td>
+            <form autocomplete="off" onsubmit="onFormSubmit()">
 
-You can use the [editor on GitHub](https://github.com/TaniaNaal/Evaluaci-n-Tema-3/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+            <!--Division del id del participante-->
+                <div>
+                    <label for="ID_participante">
+                        ID_participante:
+                    </label>
+                    <input type="number" id="ID_participante" name="ID_participante">
+                </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+                <!--Division del nombre del participante-->
+<div>
+    <label for="nombre_participante">
+        Nombre del participante:
+    </label>
+    <input type="text" id="nombre_participante" name="nombre_participante">
+</div>
 
-### Markdown
+<!--Division de la fecha de inscripcion-->
+<div>
+    <label for="fecha">
+        Fecha de inscripción:
+    </label>
+    <input type="date" id="fecha" name="fecha">
+</div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<!--Division de los días en que estarán inscritos-->
+<div>
+    <label for="dias_inscripcion">
+        Días inscritos:
+    </label>
+    <input type="number" id="dias_inscripcion" name="dias_inscripcion">
+</div>
 
-```markdown
-Syntax highlighted code block
+<div class="form_action--button">
+    <input type="submit" value="Registrar">
+    <input type="reset" value="Reiniciar">
+</div>
 
-# Header 1
-## Header 2
-### Header 3
+<td>
+    <table class="list" id="participate_list">
+        <thead>
+            <tr>
+                <th>ID del participante</th>
+                <th>Nombre del participante</th>
+                <th>Fecha de inscripción</th>
+                <th>Días inscritos</th>
+            </tr>
+        </thead>
+        <tbody>
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TaniaNaal/Evaluaci-n-Tema-3/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+        </tbody>
+    </table>
+</td>
+            </form>
+        </td>
+    </tr>
+</table>
+<script type="text/javascript" src="./app.js"></script>
+    </body>
